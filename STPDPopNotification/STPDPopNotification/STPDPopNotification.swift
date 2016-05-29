@@ -19,7 +19,7 @@ class STPDPopNotification: NSObject {
             UIView.animateWithDuration(0.18, animations: {
                 baseView.center.y += UIScreen.mainScreen().bounds.height
                 }, completion: { (Bool) in
-                    baseView.STPDAMRotation(0.1)
+                    baseView.STPDAMRotate(0.1)
             })
         }
     }
@@ -31,7 +31,7 @@ class STPDPopNotification: NSObject {
             UIView.animateWithDuration(0.18, animations: {
                 baseView.center.y += UIScreen.mainScreen().bounds.height
                 }, completion: { (Bool) in
-                    baseView.STPDAMRotation(0.1)
+                    baseView.STPDAMRotate(0.1)
             })
             }, leftButtonTitle: leftButtonTitle, leftButtonHandler: { (leftButton) in
                 if leftButtonHandler != nil {
@@ -50,7 +50,7 @@ class STPDPopNotification: NSObject {
             UIView.animateWithDuration(0.18, animations: {
                 baseView.center.y += UIScreen.mainScreen().bounds.height
                 }, completion: { (Bool) in
-                    baseView.STPDAMRotation(0.1)
+                    baseView.STPDAMRotate(0.1)
             })
         }
     }
@@ -62,7 +62,7 @@ class STPDPopNotification: NSObject {
             UIView.animateWithDuration(0.18, animations: {
                 baseView.center.y += UIScreen.mainScreen().bounds.height
                 }, completion: { (Bool) in
-                    baseView.STPDAMRotation(0.1)
+                    baseView.STPDAMRotate(0.1)
             })
             }, leftButtonTitle: leftButtonTitle, leftButtonHandler: { (leftButton) in
                 if leftButtonHandler != nil {
@@ -612,7 +612,7 @@ extension UIView {
         layer.addAnimation(animation, forKey: "opacity")
     }
     
-    func STPDAMRotation(time: Float) {
+    func STPDAMRotate(time: Float) {
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.duration = 0.05
         animation.repeatCount = time / 0.05
