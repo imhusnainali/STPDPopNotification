@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="STPDPopNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGs-Hg-RGB">
+                                <rect key="frame" x="246" y="209" width="108" height="30"/>
+                                <state key="normal" title="String No Detail"/>
+                                <connections>
+                                    <action selector="stringNoDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFT-k6-8ZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLu-as-iua">
+                                <rect key="frame" x="194" y="247" width="213" height="30"/>
+                                <state key="normal" title="String With Detail [Two Button]"/>
+                                <connections>
+                                    <action selector="stringWithDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZm-qq-YT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2F-z4-7je">
+                                <rect key="frame" x="202" y="285" width="197" height="30"/>
+                                <state key="normal" title="String With Extra Long Detail"/>
+                                <connections>
+                                    <action selector="stringExtraLong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="09h-vP-azE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2X-25-NfU">
+                                <rect key="frame" x="251" y="323" width="99" height="30"/>
+                                <state key="normal" title="Regular Image"/>
+                                <connections>
+                                    <action selector="regularImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ce-I1-em3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G75-9m-DEO">
+                                <rect key="frame" x="195" y="361" width="212" height="30"/>
+                                <state key="normal" title="Extra Long Image [Two Button]"/>
+                                <connections>
+                                    <action selector="etraLongImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43k-70-cfZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aLu-as-iua" firstAttribute="top" secondItem="zGs-Hg-RGB" secondAttribute="bottom" constant="8" id="7HA-Mg-YBi"/>
+                            <constraint firstItem="Y2X-25-NfU" firstAttribute="top" secondItem="A2F-z4-7je" secondAttribute="bottom" constant="8" id="Tpg-5e-V87"/>
+                            <constraint firstItem="A2F-z4-7je" firstAttribute="top" secondItem="aLu-as-iua" secondAttribute="bottom" constant="8" id="Uht-Rt-86P"/>
+                            <constraint firstItem="aLu-as-iua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnp-RL-bcd"/>
+                            <constraint firstItem="zGs-Hg-RGB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kW4-4f-kHK"/>
+                            <constraint firstItem="A2F-z4-7je" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="laF-sK-kqo"/>
+                            <constraint firstItem="G75-9m-DEO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ltU-tp-1Wf"/>
+                            <constraint firstItem="Y2X-25-NfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBz-q1-xUH"/>
+                            <constraint firstItem="G75-9m-DEO" firstAttribute="top" secondItem="Y2X-25-NfU" secondAttribute="bottom" constant="8" id="rNI-TD-WdW"/>
+                            <constraint firstItem="A2F-z4-7je" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJ8-47-gdo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
