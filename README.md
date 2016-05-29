@@ -1,6 +1,8 @@
 # STPDPopNotification
 Pop notification alert view. Auto fit and animated. For any size of text and image. With customizable buttons. 
 
+----------------------------------------------------------------------------
+
 ### Types of Text / Image Notification alert view pop in front of the current view:
 
 No Text Content with Single Button: 
@@ -27,6 +29,8 @@ Long Image Content with Two Buttons: (Same on long image text)
 * Notification with title, scrollable long image and Ok button.
 
     ![alt tag](https://github.com/STPDChen/STPDPopNotification/blob/master/gif/5.gif)
+
+----------------------------------------------------------------------------
 
 ### Three types of UIView extension that perform animations on the view. 
 Shake: 
